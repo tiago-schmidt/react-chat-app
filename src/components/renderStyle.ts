@@ -71,5 +71,5 @@ export function renderStyle(style: Style): string {
     ${paddingRight ? `padding-right: ${paddingRight};` : ''}
     ${paddingLeft ? `padding-left: ${paddingLeft};` : ''}
     ${paddingTop ? `padding-top: ${paddingTop};` : ''}
-  `.replaceAll('\n', '')
+  `
 }
