@@ -45,11 +45,6 @@ const GlobalStyle = () => {
             font-size: 47.5%;
           }
         }
-        @media screen and (max-width: ${appConfig.breakpoints.xs}) {
-          html {
-            font-size: 42.5%;
-          }
-        }
 			`}
 		</style>
 	)
