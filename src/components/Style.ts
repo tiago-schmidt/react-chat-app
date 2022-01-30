@@ -34,4 +34,8 @@ export default interface Style {
   textAlign?: string
   hover?: Style
   active?: Style
+  lgStyle?: Style
+  mdStyle?: Style
+  smStyle?: Style
+  xsStyle?: Style
 }

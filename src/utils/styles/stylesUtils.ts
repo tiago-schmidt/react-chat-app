@@ -7,9 +7,19 @@ export const row = {
   flexDirection: 'row'
 }
 
+export const rowReverse = {
+  ...flex,
+  flexDirection: 'row'
+}
+
 export const column = {
   ...flex,
   flexDirection: 'column'
+}
+
+export const columnReverse = {
+  ...flex,
+  flexDirection: 'column-reverse'
 }
 
 export const centered = {
