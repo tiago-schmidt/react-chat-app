@@ -1,9 +1,7 @@
 # react-chat-app
-Fell free to check my app at:
+Fell free to check my app at: (it works on mobile devices too because it is responsive!)
 
 https://react-chat-app-tiago-schmidt.vercel.app/
-
-PS: You can check it on mobile devices too because it is responsive! 
 
 
 To run it locally just clone the repo and type the following commands on your prefered terminal:
