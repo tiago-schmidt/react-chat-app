@@ -11,6 +11,9 @@ const GlobalStyle = () => {
 					box-sizing: border-box;
 					list-style: none;
 				}
+        .MuiSnackbarContent-message {
+          font-size: 2rem;
+        }
         html {
           /* Every 1rem is equivalent to 10px */
           font-size: 62.5%;
