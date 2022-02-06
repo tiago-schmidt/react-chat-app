@@ -7,12 +7,13 @@ interface ButtonProps extends CommonProps {
   type?: 'button' | 'submit'
   value?: string
   disabled?: boolean
+  onClick?: any
 }
 
-const Button: React.FC<ButtonProps> = ({ styles, text, type, value, disabled }) => {
+const Button: React.FC<ButtonProps> = ({ styles, text, type, value, disabled, onClick }) => {
   return (
     <>
-      <button type={type} value={value} disabled={disabled}>
+      <button onClick={(e: any) => onClick(e.target.className)} type={type} value={value} disabled={disabled}>
         {text}
       </button>
       <style jsx>{`
