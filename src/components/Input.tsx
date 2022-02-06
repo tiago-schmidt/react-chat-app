@@ -6,15 +6,13 @@ interface InputProps extends CommonProps {
   placeholder?: string;
   type?: 'checkbox' | 'date' | 'email' | 'number' | 'password' | 'tel' | 'text'
   value?: string
+  onChange?: any
 }
 
-const Input: React.FC<InputProps> = ({ styles, placeholder, type, value }) => {
-  const inputType = type || 'text'
-  const inputPlaceholder = placeholder || ''
-  
+const Input: React.FC<InputProps> = ({ styles, placeholder, type, value, onChange }) => {
   return (
     <>
-      <input placeholder={inputPlaceholder} type={inputType} value={value}></input>
+      <input onChange={(e) => onChange(e.target.value)} placeholder={placeholder} type={type} value={value}></input>
       <style jsx>{`
         input {
           ${renderStyle(styles)};
@@ -25,6 +23,8 @@ const Input: React.FC<InputProps> = ({ styles, placeholder, type, value }) => {
 }
 
 Input.defaultProps = {
+  placeholder: '',
+  type: 'text',
   styles: {},
 }
 
