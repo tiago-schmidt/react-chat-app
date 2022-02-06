@@ -6,11 +6,13 @@
   "author": "tiago.schmidt@dbccompany.com.br <tiago.schmidt@dbccompany.com.br>",
   "license": "MIT",
   "dependencies": {
+    "@material-ui/core": "^4.12.3",
     "@types/jest": "^27.4.0",
     "@types/node": "^17.0.13",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
     "axios": "^0.25.0",
+    "material-ui-snackbar-provider": "^1.5.0",
     "next": "^12.0.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
