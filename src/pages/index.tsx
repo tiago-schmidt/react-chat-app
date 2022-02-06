@@ -66,8 +66,8 @@ const HomePage = () => {
           height: '300px', padding: '2.5rem', paddingRight:'0', display: 'flex',
           lgStyle: { height: '250px', width: '450px' },
           mdStyle: { height: '200px' },
-          smStyle: { height: '350px', width: '380px', ...columnReverse, padding: '3.5rem', paddingRight:'0', },
-          xsStyle: { width: '95%', padding: '2rem', paddingRight:'0', },
+          smStyle: { height: '350px', width: '380px', ...columnReverse, padding: '2rem' },
+          xsStyle: { width: '95%', padding: '2rem' },
         }}>
           <Box styles={{ paddingTop: '.75rem', paddingRight: '2.5rem', width: '65%', height: '100%', ...column,
             smStyle: { width: '100%', paddingTop: '1.5rem', paddingRight: '0' }, 
@@ -78,7 +78,7 @@ const HomePage = () => {
             </Box>
 
             <Box styles={{ width: '100%', height: '55%', ...centeredColumn }}>
-              <Input onChange={setUsername} value={username} styles={{ 
+              <Input onChange={setUsername} value={username} maxLength={30} styles={{ 
                 outline: 'none', padding: '1rem', width: '100%', ...lightRounded, 
                 ...noBorder, fontSize: '1.8rem'
               }}/>
@@ -93,10 +93,11 @@ const HomePage = () => {
           <Box styles={{ 
             width: '35%', height: '100%', ...centeredColumn, paddingLeft: '1rem', paddingRight: '1rem',
             borderLeft: `solid .2rem ${primaryColors['400']}`, overflow: 'hidden',
-            smStyle: { width: '100%', paddingLeft: '0', borderLeft: '0', borderBottom: `solid .3rem ${primaryColors['400']}`, },
+            smStyle: { width: '100%', paddingTop: '0', borderLeft: '0', borderBottom: `solid .3rem ${primaryColors['400']}`, paddingBottom: '1.5rem' },
           }}>
             <Box styles={{ 
               overflow: 'hidden', width: '100%', borderRadius: '50%', border: `solid .5rem ${primaryColors['300']}`,
+              lgStyle: { border: 'none' }, mdStyle: { width: '85%' }, smStyle: { width: '150px' }
             }}>
               <Image src={user && user.avatar_url ? user.avatar_url : `${placeholder}/180x180`} styles={{ width: '100%', height: '100%' }}></Image>
             </Box>
