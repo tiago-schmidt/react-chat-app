@@ -24,6 +24,7 @@ export default interface Style {
   color?: string
   height?: string
   width?: string
+  wordBreak?: string
   fontSize?: string
   fontWeight?: string
   outline?: string

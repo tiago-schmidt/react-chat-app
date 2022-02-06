@@ -27,6 +27,7 @@ export function renderStyle(style: Style): string {
     color,
     height,
     width,
+    wordBreak,
     fontSize,
     fontWeight,
     outline,
@@ -43,6 +44,7 @@ export function renderStyle(style: Style): string {
     ${flexDirection ? `flex-direction: ${flexDirection};` : ''}
     ${alignItems ? `align-items: ${alignItems};` : ''}
     ${justifyContent ? `justify-content: ${justifyContent};` : ''}
+    ${wordBreak ? `word-break: ${wordBreak};` : ''}
     ${fontSize ? `font-size: ${fontSize};` : ''}
     ${fontWeight ? `font-weight: ${fontWeight};` : ''}
     ${textAlign ? `text-align: ${textAlign};` : ''}
