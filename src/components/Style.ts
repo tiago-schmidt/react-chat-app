@@ -27,6 +27,7 @@ export default interface Style {
   fontSize?: string
   fontWeight?: string
   outline?: string
+  overflow?: string
   cursor?: string
   display?: string
   maxWidth?: string

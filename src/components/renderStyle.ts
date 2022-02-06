@@ -30,6 +30,7 @@ export function renderStyle(style: Style): string {
     fontSize,
     fontWeight,
     outline,
+    overflow,
     cursor,
     display,
     maxWidth,
@@ -47,6 +48,7 @@ export function renderStyle(style: Style): string {
     ${textAlign ? `text-align: ${textAlign};` : ''}
     ${cursor ? `cursor: ${cursor};` : ''}
     ${outline ? `outline: ${outline};` : ''}
+    ${overflow ? `overflow: ${overflow};` : ''}
     ${width ? `width: ${width};` : ''}
     ${maxWidth ? `max-width: ${maxWidth};` : ''}
     ${height ? `height: ${height};` : ''}
