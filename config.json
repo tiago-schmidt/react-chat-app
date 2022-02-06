@@ -1,4 +1,7 @@
 {
+  "githubApi": {
+    "url": "https://api.github.com/users"
+  },
   "breakpoints": {
     "lg": "900px",
     "md": "700px",
@@ -7,7 +10,8 @@
   },
   "theme": {
     "images": {
-      "homeBackground": "https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format"
+      "homeBackground": "https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format",
+      "placeholder": "https://via.placeholder.com"
     },
     "colors": {
       "primary": {
