@@ -7,8 +7,7 @@ interface TitleProps extends CommonProps {
   text: string
 }
 
-const Title: React.FC<TitleProps> = ({ tag: TagProps, text, styles }) => {
-  const Tag = TagProps || 'h1'
+const Title: React.FC<TitleProps> = ({ tag: Tag, text, styles }) => {
 	return (
 		<>
 			<Tag>{text}</Tag>

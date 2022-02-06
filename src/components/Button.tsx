@@ -10,14 +10,10 @@ interface ButtonProps extends CommonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({ styles, text, type, value, disabled }) => {
-  const btnType = type || 'button'
-  const btnText = text || 'Clique'
-  const btnDisabled = disabled || false
-
   return (
     <>
-      <button type={btnType} value={value} disabled={btnDisabled}>
-        {btnText}
+      <button type={type} value={value} disabled={disabled}>
+        {text}
       </button>
       <style jsx>{`
         button {
@@ -35,6 +31,9 @@ const Button: React.FC<ButtonProps> = ({ styles, text, type, value, disabled }) 
 }
 
 Button.defaultProps = {
+  text: 'Clique',
+  disabled: false,
+  type: 'button',
   styles: {},
 }
 

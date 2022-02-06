@@ -7,8 +7,7 @@ interface BoxProps extends CommonProps {
   tag?: 'form' | 'div' | 'ul' | 'main' | 'section' | 'article' | 'header' | 'footer' | 'nav'
 }
 
-const Box: React.FC<BoxProps> = ({ tag, styles, children }) => {
-  const Tag = tag || 'div'
+const Box: React.FC<BoxProps> = ({ tag: Tag, styles, children }) => {
   return (
     <>
       <Tag>{children}</Tag>
