@@ -1,5 +1,5 @@
 # react-chat-app
-Fell free to check my app at:
+Fell free to check my app at: (it works on mobile devices too because it is responsive!)
 
 https://react-chat-app-tiago-schmidt.vercel.app/
 
